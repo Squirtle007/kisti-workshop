@@ -22,16 +22,23 @@ Navigate to the [**`cuda-q-academic`**](https://github.com/Squirtle007/cudaq-wor
 ### Advanced Applications with CUDA-Q - AI for Quantum
 * [`ai-for-quantum/00_[simplified]compiling_unitaries_using_diffusion_models.ipynb`](https://github.com/Squirtle007/cudaq-workshop-kisti/blob/main/cuda-q-academic/ai-for-quantum/00_%5Bsimplified%5Dcompiling_unitaries_using_diffusion_models.ipynb)
 
-
+<br>
+<br>
 # Docker Instructions
 
+Follow these steps to set up the lab environment in a Docker container:
+
 ## Build the image
-```bash
+
+Go to the folder containing the [Dockerfile](./Dockerfile), then run the following command to build the image:
+```
 docker build -t cudaq-env:latest .
 ```
 
 ## Run the container
-```bash
+
+Start the container with GPU support and map port 8888 for JupyterLab access:
+```
 docker run -it --rm --gpus all -p 8888:8888 cudaq-env:latest
 ```
 
@@ -40,12 +47,14 @@ docker run -it --rm --gpus all -p 8888:8888 cudaq-env:latest
 Once the container is running, open your browser and visit:
 ```
 http://localhost:8888
-
 ```
 
+<br>
+<br>
 # Beyond This Lab
 
 Highly recommend exploring official resources below to continue learning:
 * 🎓 [CUDA-Q Academic](https://github.com/NVIDIA/cuda-q-academic) – Educational resources and research materials
 * 📚 [NVIDIA CUDA-Q Documentation](https://nvidia.github.io/cuda-quantum/latest/) – Comprehensive guides and API references
 * 💻 [CUDA-Q GitHub Repository](https://github.com/NVIDIA/cuda-quantum) – Source code, examples, and community discussions
+
