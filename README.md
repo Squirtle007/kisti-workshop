@@ -27,7 +27,6 @@ Navigate to the [**`cuda-q-academic`**](https://github.com/Squirtle007/cudaq-wor
 * [`ai-for-quantum/00_[simplified]compiling_unitaries_using_diffusion_models.ipynb`](https://github.com/Squirtle007/cudaq-workshop-kisti/blob/main/cuda-q-academic/ai-for-quantum/00_%5Bsimplified%5Dcompiling_unitaries_using_diffusion_models.ipynb)
 
 <br>
-<br>
 
 # Self-Hosted Hands-on Lab Setup
 
@@ -58,8 +57,7 @@ http://localhost:8888
 
 ## pip Install Instructions
 
-An alternative method if you prefer installing packages directly in your local environment.
-(⚠️ The Docker method is still recommended as it provides a pre-configured environment with all dependencies.)
+An alternative method if you prefer installing packages directly in your local environment (⚠️The Docker method is still recommended as it provides a pre-configured environment with all dependencies).
 
 ### 1. Prerequisites
 
@@ -83,7 +81,6 @@ cd cudaq-workshop-kisti/cuda-q-academic
 ```
 
 <br>
-<br>
 
 # Beyond This Lab
 
@@ -91,4 +88,5 @@ Highly recommend exploring official resources below to continue learning:
 * 🎓 [CUDA-Q Academic](https://github.com/NVIDIA/cuda-q-academic) – Educational resources and research materials
 * 📚 [NVIDIA CUDA-Q Documentation](https://nvidia.github.io/cuda-quantum/latest/) – Comprehensive guides and API references
 * 💻 [CUDA-Q GitHub Repository](https://github.com/NVIDIA/cuda-quantum) – Source code, examples, and community discussions
+
 
