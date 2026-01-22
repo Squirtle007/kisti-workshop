@@ -36,7 +36,7 @@ Follow these steps to set up the lab environment using a [Docker container](http
 
 ### 1. Build the image
 
-Go to the folder containing the [Dockerfile](./dockerfile), then run the following command to build the image:
+Go to the folder containing the [`Dockerfile`](./dockerfile), then run the following command to build the image:
 ```bash
 docker build -t cudaq-env:latest .
 ```
@@ -65,7 +65,7 @@ Make sure your system configuration (Python/driver/CUDA version) meets the [Depe
 
 ### 2. Install dependencies
 
-Run the following commands in your local environment, with the [requirements.txt](./requirements.txt) in your current directory:
+Run the following commands in your local terminal, with the [`requirements.txt`](./requirements.txt) in your current directory:
 ```bash
 sudo apt update && sudo apt install -y gfortran python3-pip git
 pip install cudaq==0.13.0
@@ -88,5 +88,6 @@ Highly recommend exploring official resources below to continue learning:
 * 🎓 [CUDA-Q Academic](https://github.com/NVIDIA/cuda-q-academic) – Educational resources and research materials
 * 📚 [NVIDIA CUDA-Q Documentation](https://nvidia.github.io/cuda-quantum/latest/) – Comprehensive guides and API references
 * 💻 [CUDA-Q GitHub Repository](https://github.com/NVIDIA/cuda-quantum) – Source code, examples, and community discussions
+
 
 
