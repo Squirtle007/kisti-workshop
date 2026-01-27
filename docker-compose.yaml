@@ -2,13 +2,20 @@ version: '3.8'
 
 services:
   cudaq-lab:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    image: cudaq-env:latest
+    image: nvcr.io/nvidia/quantum/cuda-quantum:cu13-0.13.0
     container_name: cudaq-lab
+    user: root
     ports:
       - "8888:8888"
+    working_dir: /home/cudaq
+    command: >
+      bash -c "
+        apt-get update && apt-get install -y python3-pip git gfortran &&
+        rm -rf /var/lib/apt/lists/* &&
+        pip3 install --no-cache-dir jupyterlab cudaq-solvers==0.5.0 cudaq_qec==0.5.0 pyscf==2.6.2 openfermionpyscf==0.5 matplotlib==3.8.4 openfermion==1.6.1 genQC==0.1.0 torch==2.9.1 &&
+        git clone https://github.com/Squirtle007/kisti-workshop.git &&
+        jupyter lab --ip=0.0.0.0 --port=8888 --no-browser --allow-root --ServerApp.token='' --ServerApp.password=''
+      "
     deploy:
       resources:
         reservations:
