@@ -4,7 +4,7 @@
 src="https://developer.nvidia.com/sites/default/files/akamai/nvidia-cuquantum-icon.svg"
 />
 
-Explore CUDA-Q through hands-on labs covering quantum computing fundamentals, quantum chemistry simulations, quantum error correction, and AI-powered quantum circuit synthesis. This session guides you from basic CUDA-Q programming to advanced applications in hybrid quantum-classical computing.
+Explore CUDA-Q through hands-on labs covering quantum computing fundamentals, quantum chemistry simulations, quantum error correction, and AI-powered quantum circuit synthesis. These tutorials have been tailored for the [KISTI Hybrid Quantum-Classical Applications Bootcamp](https://www.openhackathons.org/s/siteevent/a0CUP00003APKEp2AP/se000448), taking you from foundational CUDA-Q programming to advanced hybrid quantum-classical computing applications.
 
 ## Agenda
 
@@ -88,6 +88,7 @@ Highly recommend exploring official resources below to continue learning:
 * 🎓 [CUDA-Q Academic](https://github.com/NVIDIA/cuda-q-academic) – Educational resources and research materials
 * 📚 [NVIDIA CUDA-Q Documentation](https://nvidia.github.io/cuda-quantum/latest/) – Comprehensive guides and API references
 * 💻 [CUDA-Q GitHub Repository](https://github.com/NVIDIA/cuda-quantum) – Source code, examples, and community discussions
+
 
 
 
