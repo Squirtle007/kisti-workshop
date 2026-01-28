@@ -8,26 +8,26 @@ Explore CUDA-Q through hands-on labs covering quantum computing fundamentals, qu
 
 ## Agenda
 
-Navigate to the [**`tutorials`**](https://github.com/Squirtle007/kisti-workshop/tree/main/tutorials) folder which contains 4 labs:
+Navigate to the **`tutorials`** folder which contains 4 labs:
 
 ### 1. Getting started with CUDA-Q
-* [`quick-start-to-quantum/00_cudaq_basics.ipynb`](https://github.com/Squirtle007/kisti-workshop/blob/main/tutorials/quick-start-to-quantum/00_cudaq_basics.ipynb)
-* [`quick-start-to-quantum/01_quick_start_to_quantum.ipynb`](https://github.com/Squirtle007/kisti-workshop/blob/main/tutorials/quick-start-to-quantum/01_quick_start_to_quantum.ipynb)
-* [`quick-start-to-quantum/02_quick_start_to_quantum.ipynb`](https://github.com/Squirtle007/kisti-workshop/blob/main/tutorials/quick-start-to-quantum/02_quick_start_to_quantum.ipynb)
+* `quick-start-to-quantum/00_cudaq_basics.ipynb`
+* `quick-start-to-quantum/01_quick_start_to_quantum.ipynb`
+* `quick-start-to-quantum/02_quick_start_to_quantum.ipynb`
 
 ### 2. Advanced Applications with CUDA-Q - Quantum Chemistry
-* [`chemistry-simulations/vqe_basics.ipynb`](https://github.com/Squirtle007/kisti-workshop/blob/main/tutorials/chemistry-simulations/vqe_basics.ipynb)
-* [`chemistry-simulations/adapt_vqe.ipynb`](https://github.com/Squirtle007/kisti-workshop/blob/main/tutorials/chemistry-simulations/adapt_vqe.ipynb)
+* `chemistry-simulations/vqe_basics.ipynb`
+* `chemistry-simulations/adapt_vqe.ipynb`
 
 ### 3. Advanced Applications with CUDA-Q - Quantum Error Correction
-* [`qec101/01_QEC_Intro.ipynb`](https://github.com/Squirtle007/kisti-workshop/blob/main/tutorials/qec101/01_QEC_Intro.ipynb)
-* [`qec101/02_QEC_Stabilizers.ipynb`](https://github.com/Squirtle007/kisti-workshop/blob/main/tutorials/qec101/02_QEC_Stabilizers.ipynb)
+* `qec101/01_QEC_Intro.ipynb`
+* `qec101/02_QEC_Stabilizers.ipynb`
 
 ### 4. Advanced Applications with CUDA-Q - AI for Quantum
-* [`ai-for-quantum/00_[simplified]compiling_unitaries_using_diffusion_models.ipynb`](https://github.com/Squirtle007/kisti-workshop/blob/main/tutorials/ai-for-quantum/00_%5Bsimplified%5Dcompiling_unitaries_using_diffusion_models.ipynb)
+* `ai-for-quantum/00_[simplified]compiling_unitaries_using_diffusion_models.ipynb`
 
 ### [Bonus] Quantum Phase Classification using Quantum Convolutional Neural Networks (QCNN)
-* [`quantum-machine-learning/QCNN_phase_cudaq.ipynb`](https://github.com/Squirtle007/kisti-workshop/blob/main/tutorials/quantum-machine-learning/QCNN_phase_cudaq.ipynb)
+* `quantum-machine-learning/QCNN_phase_cudaq.ipynb`
 
 
 <br>
@@ -69,19 +69,18 @@ Make sure your system configuration (Python/driver/CUDA version) meets the [Depe
 
 ### 2. Install dependencies
 
-Run the following commands in your local terminal, with the [`requirements.txt`](./requirements.txt) in your current directory:
+To set up the CUDA-Q environment, run the following commands in your local terminal:
 ```bash
 sudo apt update && sudo apt install -y gfortran python3-pip git
-pip install cudaq==0.13.0
-pip install -r requirements.txt
+pip install cudaq==0.13.0 cudaq-solvers==0.5.0 cudaq_qec==0.5.0
 ```
 
 ### 3. Clone the repository
 
-Clone this repository to get the tutorials:
+Clone this repository to get the tutorials and install the necessary libraries with the [`requirements.txt`](./requirements.txt) in your current directory:
 ```bash
 git clone -b 2026-workshops https://github.com/NVIDIA/cuda-q-academic.git
-cd kisti-workshop/tutorials
+cd cuda-q-academic/kisti-workshop && pip install -r requirements.txt
 ```
 
 <br>
