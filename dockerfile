@@ -22,11 +22,12 @@ RUN pip3 install --no-cache-dir -v \
 RUN python3 -m jupyter --version
 
 WORKDIR /home/cudaq
-RUN git clone -b 2026-workshops https://github.com/NVIDIA/cuda-q-academic.git
+RUN git clone https://github.com/Squirtle007/kisti-workshop.git
 
 EXPOSE 8888
 
 ENV JUPYTER_TOKEN=''
 ENV JUPYTER_PASSWORD=''
+
 
 ENTRYPOINT ["jupyter", "lab", "--ip=0.0.0.0", "--port=8888", "--no-browser", "--allow-root", "--NotebookApp.token=''", "--NotebookApp.password=''"]
